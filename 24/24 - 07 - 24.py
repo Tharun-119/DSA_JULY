@@ -140,3 +140,29 @@ def palindrome(a):
     return True
 
 print(palindrome(a1))
+
+method 2
+s1 = "racecar"
+def palin(s):
+    for i in range(0,len(s)):
+        if s[i] != s[-i-1]:
+            return False
+    return True
+print(palin(s1))
+
+#remove duplicates
+def remove_duplicate(s):
+    s = set(s)
+    return list(s
+print(remove_duplicate(s1))
+
+method 2
+s1 = [1,2,2,3,4,4,5]
+
+def remove(s):
+    result = []
+    for i in s:
+        if i not in result:
+            result.append(i)
+    return result
+print(remove(s1))
