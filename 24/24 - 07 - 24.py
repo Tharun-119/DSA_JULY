@@ -166,3 +166,42 @@ def remove(s):
             result.append(i)
     return result
 print(remove(s1))
+
+#intersection of two lists
+s1 = [1,2,3,4]
+s2 = [2,3,4,5]
+lis = []
+def intersection(s,ss):
+    for i in s:
+        for j in ss:
+            if i == j:
+                lis.append(i)
+    return lis
+print(intersection(s1,s2))
+
+method 2
+s1 = [1,2,3,4]
+s2 = [2,3,4,5]
+def inter(s,ss):
+    return list(set(s).intersection(set(ss)))
+print(inter(s1,s2))
+
+merge two sorted lists
+s1 = [1,2,3,4]
+s2 = [5,6,7,8]
+def merge_list(s,ss):
+    return s + ss
+print(merge_list(s1,s2))        
+
+roatating the list
+s1 = [1,2,3,4,5]
+k1 = 2
+
+def rotate(s,k):
+    return s[-k:]+s[:-k]
+print(rotate(s1, k1))
+
+merging of two dictionaties
+
+
+    
